@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- onkeypress event -->
+    <!-- onkeydown event -->
+    <!-- onkeyup event -->
+
+    <input type="text" id="1">
+    <input type="text" id="2">
+    <input type="text" id="3">
+    
+    <script>
+        var press=document.getElementById("1");
+        var down=document.getElementById("2");
+        var up=document.getElementById("3");
+
+        press.addEventListener("keypress",()=>{
+            alert("press");
+        });
+
+        down.addEventListener("keydown",()=>{
+            alert("dowm")
+        });
+
+        up.addEventListener("keyup",()=>{
+            alert("up");
+        });
+        
+    </script>
+</body>
+</html>
