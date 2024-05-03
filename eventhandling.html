@@ -6,6 +6,31 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+    // domcontentload event
+    addEventListener("DOMContentLoaded",(event)=>{
+        console.log("the dom is successfully loaded")
+    })
+
+    // onload event
+    addEventListener("load",(event)=>{
+        console.log(event)
+    })
+
+    //beforeunload event
+    addEventListener("beforeunload",()=>{
+        console.log("the page is about to unload")
+        event.preventDefault()
+    })
+
+    //unload event
+
+    addEventListener("unload",event=>{
+        console.log("the page is completely unloaded")
+        event.returnValue=' '
+    })
+
+    </script>
     
 </body>
 </html>
