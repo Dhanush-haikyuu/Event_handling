@@ -7,17 +7,19 @@
 </head>
 <body>
     <script>
-    function mainFunction(callback) {
-    console.log("Performing operation...");
-    callback("Operation complete");
+    function mainfunct(changing){
+        console.log("first printing");
+        console.log("second printing");
+        changing("my name to dhanushkodi")
+
+
     }
-    
-    
-    function callbackFunction(result) {
-    console.log("Result: " + result);
-    
+
+    function calling(hii){
+        console.log("chaning:"+hii);
     }
-    mainFunction(callbackFunction);
+
+    mainfunct(calling);
     
     
     </script>
